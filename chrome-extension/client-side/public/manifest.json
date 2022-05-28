@@ -1,0 +1,16 @@
+{
+  "short_name": "BtC!",
+  "name": "Break the Cycle Extension",
+  "description": "Break the Cycle built using React and TypeScript :)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "the default title"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  }
+}
