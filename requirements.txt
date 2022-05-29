@@ -4,3 +4,22 @@ psycopg2-binary
 Flask-SQLAlchemy
 psycopg2-binary  
 marshmallow
+Jinja2
+summa
+newspaper3k
+
+# copied from photo-app
+requests            # for testing
+dnspython            # support for connecting to remote MongoDB
+python-dotenv       # support for environment variables
+Flask
+Flask-Cors
+Flask-RESTful
+Flask-JWT-Extended
+
+psycopg2-binary         # PostgreSQL DB connector
+SQLAlchemy
+Flask-SQLAlchemy    # Python <--> DB ORM
+pylint-django        # linter help
+Faker               # to install fake data
+gunicorn

@@ -2,92 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="icon" href="favicon.ico" />
     <title>ACT-ivism</title>
+	<script lang="text/javascript" src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2377a22da8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-
-    <script lang="text/javascript" src="index.js" defer></script>
-    
   </head>
 <!--  -->
 
   <body>
-    
+       
     <div id="root">
-      <div id="title"> 
-        <h1> 
-          How can you make a difference now? 
-        </h1>
-      </div>
-    
-
-      <div id="header"> 
-        <p>
-          You may care about:
-        </p>
-      </div>
-        
-      <ul class = "tags">
-        <li> Ukraine </li>
-        <li> Ukraine </li>
-        <li> Ukraine </li>
-        <li> Ukraine </li>
-      </ul>
-    
-      <div id="navigation">
-
-        <p>
-          What can you do now?
-        </p>
-
-        <ul class = "nav-tags">
-          <li id="all"> All </li>
-          <li id="events"> Events </li>
-          <li id="fundraisers"> Fundraisers </li>
-          <li id="campaigns"> Campaigns </li>
-          <li id="laws"> Laws </li>
+        <div id="title"> 
+          <h1> 
+            How can you make a difference now? 
+          </h1>
+        </div>
+      
+  
+        <div id="header"> 
+          <p>
+            You may care about:
+          </p>
+        </div>
+          
+        <ul class = "tags">
+            
         </ul>
+      
+        <div id="navigation">
+  
+          <p>
+            What can you do now?
+          </p>
+  
+          <ul class = "nav-tags">
+            <button id="all" onclick="allCards()"> All </button>
+            <button id="events" onclick="evn_cards()"> Events </button>
+            <button id="fundraisers" onclick="fund_cards()"> Fundraisers </button>
+            <button id="campaigns" onclick="camp_cards()"> Campaigns </button>
+            <button id="laws"> Laws </button>
+          </ul>
+        </div>
+  
+        <div id="cards">
+          <div id="all-cards" ></div>
+          <div id="event-cards"></div>
+          <div id="fundraiser-cards" ></div>
+          <div id="campaign-cards"></div>
+        </div>
+  
+        <footer>
+          <button id="bookmarks"> <span><i class="far fa-bookmark fa-lg" ></i> Access your bookmarked events</button></span>
+        </footer>
       </div>
-
-      <div id="cards">
-        
-      </div>
-
-      <footer>
-        <button id="bookmarks"> <span><i class="far fa-bookmark fa-lg" ></i> Access your bookmarked events</button></span>
-      </footer>
-    </div>
-
 
   </body>
 
+  <script>
+    //======================= navigation =============================
+const all = document.getElementById("all-cards")
+const evn = document.getElementById("event-cards")
+const fund = document.getElementById("fundraiser-cards")
+const camp = document.getElementById("campaign-cards")
 
+evn.addEventListener("click", evn_cards);
+all.style.display = "flex";
+evn.style.display = "none";
+fund.style.display = "none";
+camp.style.display = "none";
+
+function allCards(){
+  alert("all")
+  all.style.display = "flex";
+  evn.style.display = "none";
+  fund.style.display = "none";
+  camp.style.display = "none";
+}
+
+function evn_cards(){
+  alert("evn")
+  all.style.display = "none";
+  evn.style.display = "flex";
+  fund.style.display = "none";
+  camp.style.display = "none";
+}
+
+function fund_cards(){
+  alert("fund")
+  all.style.display = "none";
+  evn.style.display = "none";
+  fund.style.display = "flex";
+  camp.style.display = "none";
+}
+
+function camp_cards(){
+  alert("camp")
+  all.style.display = "none";
+  evn.style.display = "none";
+  fund.style.display = "none";
+  camp.style.display = "flex";
+}
+
+allCards();
+
+  </script>
 
 
 

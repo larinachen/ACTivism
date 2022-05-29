@@ -10,6 +10,8 @@ from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow import Schema, fields
 import os
+import pickle
+from pprint import pprint
 
 # initializes flask app:
 app = Flask(__name__,template_folder='client-side/public')
@@ -20,10 +22,10 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
 
-cors = CORS(app, 
-    resources={r"/api/*": {"origins": '*'}}, 
-    supports_credentials=True
-)
+# cors = CORS(app, 
+#     resources={r"/api/*": {"origins": '*'}}, 
+#     supports_credentials=True
+# )
 
 # set up database tables
 class Events(db.Model):
@@ -88,25 +90,22 @@ class EventsSchema(Schema):
 @app.route('/')
 def home():
     return render_template(
-        'index.html'
+        'index.html',
+        keywords = ["a","b"]
     )
 
 @app.route('/tester')
 def index():
-    search_term = request.args.get('term')
-    search_limit = request.args.get('limit') or 1
-    url = 'https://www.apitutor.org/spotify/simple/v1/search?q={term}&type=track&limit={limit}'.format(term=search_term, limit=search_limit)
-    response = requests.get(url)
-    tracks = response.json()
+    k = 'a'
     return render_template(
         'api_tester.html',
-        track = tracks[0]
     )
+
 
 @app.route('/organizers')
 def organizers():
     return render_template(
-        'organizers.html'
+        'organizers.html',
     )
 
 @app.route('/events', methods=['GET'])

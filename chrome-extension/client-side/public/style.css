@@ -47,14 +47,19 @@ h1 {
     padding: 0;
   }
 
-  .nav-tags li{
+  .nav-tags li, .nav-tags button{
     display: inline-block;
     background-color: aquamarine;
     font-size: 12px;
     padding: 7px;
+    border: white;
   }
 
   .nav-tags li:hover{
+    background-color: cornflowerblue;
+  }
+
+  .nav-tags button:hover{
     background-color: cornflowerblue;
   }
 
@@ -67,8 +72,11 @@ h1 {
     margin-left: 0px;
   }
 
+  #all-cards, #event-cards, #fundraiser-cards, #campaign-cards{
+    flex-direction: column;
+  }
+
   .card {
-    main
       display: flex;
       flex-direction: row;
       justify-content: space-between;

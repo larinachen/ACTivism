@@ -15,7 +15,8 @@
   <body>
         <!-- sign up form -->
 		<div id = 'submit' class = container>
-			<h3>Submit an event</h3> 
+			<h3>Submit an event</h3>
+			<P>{{keywords}}</P> 
         <!-- user input elements-->
 			<input type='title' id="title" placeholder='Your event title'/> <br/>
 			<input type='description' id="description" placeholder='Event description'/> <br/>
@@ -25,7 +26,7 @@
 			<input type='link' id="link" placeholder='Event link'/> <br/>
 			<input type='img_url' id="img_url" placeholder='Cover image url'/> <br/>
             <input type='keyword' id="keyword" placeholder='Keyword for search'/> <br/>
-			<button id='submit_button' onclick='login()'>Submit</button>
+			<button type="submit" id="submitbtn">Submit</button>
 		</div>
     
 

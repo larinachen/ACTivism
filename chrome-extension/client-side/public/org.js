@@ -17,3 +17,13 @@ function login(){
 
 // submitButton = document.querySelector('#submit_button')
 // submitButton.addEventListener("click", submit1)
+
+
+let modal = document.getElementById('submit');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        alert("hello")
+    }
+}
