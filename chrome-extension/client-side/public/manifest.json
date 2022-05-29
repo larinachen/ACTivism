@@ -12,5 +12,8 @@
     "16": "logo192.png",
     "48": "logo192.png",
     "128": "logo192.png"
-  }
+  },
+  "host_permissions": [
+    "http://127.0.0.1:5000/"
+  ]
 }

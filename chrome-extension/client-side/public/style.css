@@ -1,0 +1,68 @@
+#root {
+    height: 400px;
+    width: 300px;
+  }
+
+body {
+    text-align: left;
+    font-family: 'Noto Sans SC', sans-serif;
+    padding-left: 10px;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 15px;
+    height: 20px;
+  }
+
+#title{
+    border-bottom: solid 1px #ccc;
+}
+  #header hr {
+      height: 1px;
+      border:0;
+  }
+
+
+  .tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tags li{
+    display: inline-block;
+    background-color: aquamarine;
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .nav-tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-tags li{
+    display: inline-block;
+    background-color: aquamarine;
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .nav-tags li:hover{
+    background-color: cornflowerblue;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 200px;
+  }
+
+  .card {
+      display: block;
+      background-color: lightpink;
+      height: 40px;
+  }
