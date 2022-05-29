@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>ACT-ivism</title>
+	<link ... href="{{ url_for('static', filename='org.js') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    
+  </head>
+<!--  -->
+
+  <body>
+        <!-- sign up form -->
+		<div id = 'submit' class = container>
+			<h3>Submit an event</h3> 
+        <!-- user input elements-->
+			<input type='title' id="title" placeholder='Your event title'/> <br/>
+			<input type='description' id="description" placeholder='Event description'/> <br/>
+            <input type='organizer' id="organizer" placeholder='Event organizer'/> <br/>
+			<input type='location' id="location" placeholder='Location'/> <br/>
+            <input type='date' id="date" placeholder='Event date'/> <br/>
+			<input type='link' id="link" placeholder='Event link'/> <br/>
+			<input type='img_url' id="img_url" placeholder='Cover image url'/> <br/>
+            <input type='keyword' id="keyword" placeholder='Keyword for search'/> <br/>
+			<button id='submit_button' onclick='login()'>Submit</button>
+		</div>
+    
+
+
+  </body>
+
+
+
+
+
+  <style>
+      /* import fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;800&family=Roboto:wght@100;400&display=swap');
+
+
+html{
+    height: 100%;
+}
+
+body {
+	display: flext;
+	font-family: 'Roboto', sans-serif;
+    height: 100%;
+	background: #C27B68;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+    align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width:50%;
+	margin:auto;
+	padding: 10%;
+	align-items: center;
+	background-color: white;
+}
+
+.container input{
+	margin: auto;
+	display: block;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container button{
+	margin: auto;
+	box-sizing: border-box;
+	background:#C27B68;
+	color: white;
+	border: 0px;
+	border-radius: 5px;
+	padding: 15px;
+    width: 100%;
+	display: block;
+	font-size: 0.8em;
+}
+
+.container h3{
+	margin-top: 0px;
+	margin-bottom: 30px;
+    text-align: center;
+	font-size: 1.5em;
+}
+
+  </style>
+
+
+</html>
