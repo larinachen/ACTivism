@@ -11,8 +11,13 @@ const displayEvents = () => {
   const event2Html = event_card =>{
     return `
     <div class="card">
-        <p>${event_card.title}</p>
+      <p>${event_card.description}</p>
+      <p>${event_card.location}</p>
+      <p>${event_card.organizer}</p>
+      <p>${event_card.time}</p>
+      <img src="${event_card.img_url}">
     </div>
+
     `;
   }
   
