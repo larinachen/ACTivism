@@ -1,0 +1,62 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;800&display=swap');
+
+html{
+    height: 100%;
+}
+
+body {
+	display: block;
+	font-family: 'Noto Sans', Arial, sans-serif;
+    height: 100%;
+	background: #C27B68;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+    align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width:30%;
+	height: 15em;
+	margin: auto;
+	margin-top: 5%;
+	padding: 10%;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px 2px rgb(59, 59, 59);
+}
+
+.container input{
+	margin: auto;
+	display: block;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container button{
+	margin: auto;
+	box-sizing: border-box;
+	background:#C27B68;
+	color: white;
+	border: 0px;
+	border-radius: 5px;
+	padding: 15px;
+    width: 100%;
+	display: block;
+	font-size: 0.8em;
+}
+
+.container h3{
+	margin-top: 0px;
+	margin-bottom: 30px;
+    text-align: center;
+	font-size: 1.5em;
+}
+

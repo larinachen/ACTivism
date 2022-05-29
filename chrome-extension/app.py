@@ -103,6 +103,12 @@ def index():
         track = tracks[0]
     )
 
+@app.route('/organizers')
+def organizers():
+    return render_template(
+        'organizers.html'
+    )
+
 @app.route('/events', methods=['GET'])
 def get_all_events():
     events = Events.get_all()

@@ -1,6 +1,10 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;800&family=Roboto:wght@100;400&display=swap');
+
 #root {
-    height: 400px;
-    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    height: 460px;
+    width: 400px;
   }
 
 body {
@@ -33,7 +37,7 @@ h1 {
   .tags li{
     display: inline-block;
     background-color: aquamarine;
-    font-size: 10px;
+    font-size: 12px;
     padding: 7px;
   }
 
@@ -46,7 +50,7 @@ h1 {
   .nav-tags li{
     display: inline-block;
     background-color: aquamarine;
-    font-size: 10px;
+    font-size: 12px;
     padding: 7px;
   }
 
@@ -58,11 +62,53 @@ h1 {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 200px;
+    height: 230px;
+    margin-top: 12px;
+    margin-left: 0px;
   }
 
   .card {
-      display: block;
-      background-color: lightpink;
-      height: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 5px;
+      margin-left: 2px;
+      background-color: #f6e9fa;
+      height: 100px;
+      font-size: 12px;
+      border: solid 1px rgb(223, 219, 219);
+      box-shadow: 0px 0px 5px 2px rgb(213, 211, 211);
+      border-radius: 5px;
+  }
+
+  .card .main{
+    flex-direction: column;
+    font-size: 12px;
+    margin: 5px;
+    margin-left: 8px;
+  }
+
+  .card .main .bottombar{
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  .card img{
+    height: 80px;
+    width: 60px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+ #bookmarks{
+    border: 0px;
+    border: white;
+    align-self: center;
+    background-color: white;
   }
