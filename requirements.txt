@@ -1,2 +1,6 @@
 Flask==2.0
 requests==2.23.0
+psycopg2-binary
+Flask-SQLAlchemy
+psycopg2-binary  
+marshmallow
