@@ -62,7 +62,7 @@ h1 {
   }
 
   .card {
-      display: block;
-      background-color: lightpink;
-      height: 40px;
+    display: block;
+    background-color: lightpink;
+    height: 40px;
   }
